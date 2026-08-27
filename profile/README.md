@@ -9,7 +9,7 @@
 Native **Swift** menu bar app that unifies AI usage across **Cursor**, **OpenAI**, **Anthropic**, and more — track tokens, credits, spend, and burn rate without juggling provider dashboards.
 
 <p>
-  <a href="https://github.com/token-bar/token-bar/releases/latest"><strong>Download</strong></a>
+  <a href="https://apps.apple.com/app/id6805913901"><strong>Mac App Store</strong></a>
   &nbsp;·&nbsp;
   <a href="https://token-bar.pages.dev"><strong>Website</strong></a>
   &nbsp;·&nbsp;
