@@ -2,5 +2,5 @@
 
 | Date | Change |
 |------|--------|
-| 2026-08-17 | Document `profile/README.md` two-layer model (root reference vs `templates/profile/README.md`) |
-| 2026-08-17 | Initial specs for `.github-template` scaffold (public org profile) |
+| 2026-10-06 | Org meta-repo maintained in place; removed init scaffolding and init-workflow spec |
+| 2026-08-17 | Initial OKF specs for public organization meta-repository |

@@ -1,22 +1,12 @@
 # Documentation — GitHub configuration
 
-Reference for every **workflow**, **issue template**, and **pull request template** shipped with this repository template.
-
-Use this folder after creating a repo from the template to understand what each file does and what to customize.
-
-## Init wizard
-
-| Document | Summary |
-|----------|---------|
-| [Initialize from template](init-from-template.md) | Run `./scripts/init-from-template.sh` — copy `templates/` → root |
+Reference for **workflows**, **issue templates**, and the **pull request template** in the token-bar organization meta-repository.
 
 ## Workflows
 
 | Document | Source file | Summary |
 |----------|-------------|---------|
 | [Dependabot commit signer](dependabot-signature-workflow.md) | [`.github/workflows/dependabot-signature.yml`](../.github/workflows/dependabot-signature.yml) | Amends Dependabot PR commits with a `Co-authored-by` trailer |
-
-This template includes **no other** GitHub Actions workflows (no CI build/test until you add them).
 
 ## Issue templates
 
@@ -34,19 +24,17 @@ Structured forms under [`.github/ISSUE_TEMPLATE/`](../.github/ISSUE_TEMPLATE/). 
 |----------|-------------|---------|
 | [Pull request template](pull-request-template.md) | [`.github/pull_request_template.md`](../.github/pull_request_template.md) | Default PR body scaffold for contributors and maintainers |
 
-## Related automation (not documented here)
-
-These ship with the template but live outside `docs/` scope:
+## Related automation
 
 | File | Role |
 |------|------|
 | [`.github/dependabot.yml`](../.github/dependabot.yml) | Scheduled dependency update PRs |
 | [`.github/CODEOWNERS`](../.github/CODEOWNERS) | Default code review ownership |
 
-See the [repository README](../README.md) and [INSTRUCTIONS.md](../INSTRUCTIONS.md) for setup and customization.
+See the [repository README](../README.md) and [INSTRUCTIONS.md](../INSTRUCTIONS.md).
 
 ---
 
 ## Docs index
 
-**README** | [Initialize from template](init-from-template.md) | [Dependabot commit signer](dependabot-signature-workflow.md) | [Bug report](bug-report-issue-template.md) | [Feature request](feature-request-issue-template.md) | [Documentation issue](documentation-issue-template.md) | [Pull request template](pull-request-template.md)
+**README** | [Dependabot commit signer](dependabot-signature-workflow.md) | [Bug report](bug-report-issue-template.md) | [Feature request](feature-request-issue-template.md) | [Documentation issue](documentation-issue-template.md) | [Pull request template](pull-request-template.md)

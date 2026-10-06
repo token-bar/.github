@@ -1,76 +1,52 @@
-# Instructions — .github-template
+# Instructions — .github
 
-Guide for maintainers and coding agents working on this **hosted template** and for orgs adopting it.
+Guide for maintainers and coding agents working on the **token-bar** organization meta-repository.
 
-## What this template is
+## What this repository is
 
-A scaffold for the GitHub **public organization meta-repository** (`.github`):
+The GitHub **public organization meta-repository** (`.github`) for [@token-bar](https://github.com/token-bar):
 
-| Layer | Purpose |
-|-------|---------|
-| **Root** (this repo until init) | @open-templates branding + reference [`profile/README.md`](profile/README.md) |
-| [`templates/profile/README.md`](templates/profile/README.md) | Adopter public org profile — copied to `profile/README.md` on init |
-| **`templates/`** (other files) | Meta-repo docs copied to root by `./scripts/init-from-template.sh` |
+| Path | Purpose |
+|------|---------|
+| [`profile/README.md`](profile/README.md) | Public org profile shown at [github.com/token-bar](https://github.com/token-bar) |
+| `README.md` | Meta-repo overview for maintainers |
+| `.github/` | Dependabot, CODEOWNERS, issue templates, and workflows |
 
-Adopters create a **public** org repo named exactly `.github`, run init, then fill in `profile/README.md` with their template catalog.
-
-See [specs/features/01-purpose.md](specs/features/01-purpose.md) and [templates/ABOUT_TEMPLATES.md](templates/ABOUT_TEMPLATES.md).
+The TokenBar app is developed in a **private** repository. Do not link to application source from the public org profile or marketing site — use [github.com/token-bar](https://github.com/token-bar) only.
 
 ---
 
-## First steps after “Use this template”
+## Maintaining the org profile
 
-1. **Initialize** — `./scripts/init-from-template.sh` (see [docs/init-from-template.md](docs/init-from-template.md)).
-2. **Create org repo** — Public repository named `.github` under your GitHub org (if not created via template).
-3. **Push** — Open [github.com/your-org](https://github.com/your-org) to preview the public org profile.
-4. **Edit catalog** — Add template rows to `profile/README.md`.
-5. **Optional** — Scaffold [`.github-private-template`](https://github.com/open-templates/.github-private-template) for member-only maintainer notes.
+When the organization adds or changes a public repository:
 
----
+1. Add or update a row in [`profile/README.md`](profile/README.md).
+2. Update the repositories table in [`README.md`](README.md) if needed.
+3. Record notable changes in [`CHANGELOG.md`](CHANGELOG.md).
 
-## Template catalog maintenance (adopters)
-
-When your org publishes a new template repository:
-
-1. Add a row to `profile/README.md` (public summary only).
-2. Update `README.md` quick-reference tables if used.
-3. Record changes in `CHANGELOG.md`.
-4. If you use `.github-private`, sync member-facing rows there too.
-
-Full playbook: adopter [`templates/INSTRUCTIONS.md`](templates/INSTRUCTIONS.md) (copied to root on init).
+Keep the public profile focused on visitor-facing information — no secrets or internal operational detail.
 
 ---
 
-## Automation in this template
+## Automation
 
 | Asset | Role |
 |-------|------|
 | `.github/dependabot.yml` | Dependency update PRs |
 | `.github/workflows/dependabot-signature.yml` | `Co-authored-by` on Dependabot commits |
-| `.github/CODEOWNERS` | Review ownership |
+| `.github/CODEOWNERS` | Review ownership (`@charlite`) |
 
 Details: [docs/README.md](docs/README.md) · [specs/features/04-github-automation.md](specs/features/04-github-automation.md).
-
----
-
-## Agent checklist
-
-1. Read [index.md](index.md) and [specs/FEATURES.md](specs/FEATURES.md).
-2. Distinguish **hosted template** changes (root + `scripts/` + `templates/`) from **adopter** content (copied on init).
-3. **Org profile edits on this hosted repo:** change [`templates/profile/README.md`](templates/profile/README.md); root [`profile/README.md`](profile/README.md) is a **placeholder demo** only (not the live open-templates catalog).
-4. Keep `fixedRepoName: '.github'` in `scripts/init-from-template.mjs`.
-5. Never put secrets or internal operational detail in the public `profile/README.md`.
 
 ---
 
 ## Repository map
 
 ```text
-profile/README.md                 # reference public org profile (hosted demo)
-templates/profile/README.md       # adopter profile → profile/README.md on init
-templates/                        # other adopter files → repo root on init
-scripts/init-from-template.mjs    # manifest includes profile/README.md
-specs/features/03-org-profile.md  # public vs optional member profile contract
+profile/README.md                 # public org profile
+.github/                          # automation and templates
+docs/                             # workflow and issue template reference
+specs/features/                   # purpose, org profile, automation
 ```
 
 ---

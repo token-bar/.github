@@ -8,22 +8,10 @@ timestamp: 2026-08-17T00:00:00Z
 
 # Organization profile
 
-GitHub renders **two** organization profile READMEs when you use both meta-repos:
+GitHub renders [`profile/README.md`](../../profile/README.md) as the public organization homepage at [github.com/token-bar](https://github.com/token-bar).
 
-| Repository | Audience | File |
-|------------|----------|------|
-| `org/.github` | **Everyone** (public visitors) | `profile/README.md` |
-| `org/.github-private` | Signed-in org members (optional) | `profile/README.md` |
+Edit this file directly when updating the product summary, links (website, App Store, org GitHub), or the public repositories table. Keep secrets and internal operational detail out of the profile.
 
-This template scaffolds the **public** profile at `profile/README.md`.
+The application is developed in a **private** repository. Do not link to private app source from the profile or marketing site.
 
-## Hosted template vs adopter copy
-
-| Path | When |
-|------|------|
-| **Root** `profile/README.md` | Placeholder demo on the hosted template repo (not the live org catalog) |
-| **`templates/profile/README.md`** | Placeholder copied to `profile/README.md` when adopters run init |
-
-After init, edit **`profile/README.md`** in the adopter org repo to list templates with one-line public summaries. Keep internal maintainer detail out of this file — use `.github-private` if you adopt that template too.
-
-Preview: push to `main` and open `https://github.com/your-org` (no sign-in required).
+Preview: push to `main` and open `https://github.com/token-bar` (no sign-in required).

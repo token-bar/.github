@@ -7,7 +7,7 @@ updates:
       interval: "daily"
     assignees:
       # Add codeowner GitHub username here
-      - "xarlizard"
+      - "charlite"
     commit-message:
       prefix: "chore"
       include: "scope"
@@ -30,7 +30,7 @@ updates:
       interval: "weekly"
     assignees:
       # Add codeowner GitHub username here
-      - "xarlizard"
+      - "charlite"
     commit-message:
       prefix: "ci"
       include: "scope"
